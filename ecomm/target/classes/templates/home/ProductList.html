@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:th="http://www.thymeleaf.org">
+<head>
+ <title>Home</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+ 
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css">
+
+
+
+</head>
+<body style="background-color: grey;">
+
+<div class="w3-bar w3-light-grey w3-border w3-large">
+<a href="#" class="w3-bar-item w3-button w3-green"><i class="fa fa-user-o">PROFILE</i></a>
+  <a th:href="@{/home}" class="w3-bar-item w3-button"><i class="fa fa-home">HOME</i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search">SEARCH</i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-ship">ORDER DETAILS</i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-amazon">PRODUCTS</i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-shopping-bag">CART</i></a>
+  <a th:href="@{/logout}" class="w3-bar-item w3-button"><i class="fa fa-sign-out">SIGN OUT</i></a>
+</div>
+
+
+  <!--  <div> <a th:href="@{/logout}">Sign out</a></div>-->
+
+
+  <h2>Hi <span th:utext="${userName}"></span>, this is the product page.</h2>
+
+ 
+ 
+</body>
+</html>
